@@ -1,0 +1,5 @@
+{:find [(count ?artist)]
+ :where [[?artist :artist/name]
+         [not-join [?artist]
+           [?release :release/artists ?artist]
+           [?release :release/year 1970]]]}

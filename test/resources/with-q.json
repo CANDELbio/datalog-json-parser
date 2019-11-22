@@ -1,0 +1,8 @@
+{
+    ":find" : [["count", "?e"]],
+    ":with" : ["?g"],
+    ":where" : [
+      ["?g", ":gene/hugo", "ARG2"],
+      ["?e", ":measurement/gene", "?g"]
+    ]
+}

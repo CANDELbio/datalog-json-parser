@@ -1,0 +1,4 @@
+{:find [?e]
+ :where [[or
+           [?e :gene/hugo]
+           [?e :variant/coordinates]]]}

@@ -1,0 +1,22 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.parkerici/datalog-json-parser {:mvn/version "0.2.2"}
+        io.pedestal/pedestal.service {:mvn/version "0.5.5"}
+        org.slf4j/slf4j-simple {:mvn/version "1.7.21"}
+        io.pedestal/pedestal.route {:mvn/version "0.5.5"}
+        io.pedestal/pedestal.jetty {:mvn/version "0.5.5"}
+        com.datomic/client-pro {:mvn/version "0.8.28"
+                                :exclusions [org.slf4j/jul-to-slf4j
+                                             org.slf4j/slf4j-nop]}
+        org.clojure/data.json {:mvn/version "0.2.6"}}
+ :aliases
+ {:test
+  {:extra-paths ["test"]
+   :extra-deps
+   {com.cognitect/test-runner
+    {:git/url "https://github.com/cognitect-labs/test-runner.git"
+     :sha "028a6d41ac9ac5d5c405dfc38e4da6b4cc1255d5"}}}
+  :depstar
+  {:extra-deps
+   {seancorfield/depstar {:mvn/version "0.1.6"}}
+   :main-opts ["-m" "hf.depstar.uberjar" "target/example-server.jar"]}}}

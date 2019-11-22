@@ -1,0 +1,11 @@
+[[(entity-at [?e] ?tx ?t ?inst
+   [?e _ _ ?tx]
+   [(datomic.api/tx->t ?tx) ?t]
+   [?tx :db/txInstant ?inst])
+  [(value-at [?e] ?tx ?t ?inst)
+   [_ _ ?e ?tx]
+   [(datomic.api/tx->t ?tx) ?t]
+   [?tx :db/txInstant ?inst]]
+  [(entities-with [?log ?e] ?es)
+   [?e _ _ ?tx]
+   [(tx-data ?log ?tx) [[?es]]]]]]

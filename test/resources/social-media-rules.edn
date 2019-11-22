@@ -1,0 +1,4 @@
+[[(social-media ?c)
+  [?c :community/type :community.type/twitter]]
+ [(social-media ?c)
+  [?c :community/type :community.type/facebook-page]]]

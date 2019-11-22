@@ -1,0 +1,7 @@
+{":find":
+  [["max", "?t"],
+   ["max", "?inst"]],
+ ":in": ["$", "%", "?n"],
+ ":where": [
+   ["?e", ":artist/name", "?n"],
+   ["entity-at", "?e", "?tx", "?t", "?inst"]]}

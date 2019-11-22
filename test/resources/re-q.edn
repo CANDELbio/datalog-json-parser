@@ -1,0 +1,9 @@
+{:find [?name ?year]
+ :in [$ ?match]
+ :where [[(str  "(?i)" ?match) ?matcher]
+         [(re-pattern ?matcher) ?regex]
+         [(re-find ?regex ?aname)]
+         [?a :artist/name ?aname]
+         [?r :release/artists ?a]
+         [?r :release/name ?name]
+         [?r :release/year ?year]]}

@@ -1,0 +1,1 @@
+{:find [?t ?tname], :where [(?t :track/name ?tname) [(= "Outro" ?tname)]]}

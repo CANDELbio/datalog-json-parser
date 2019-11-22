@@ -1,0 +1,10 @@
+{
+  "query" : {
+    ":find" : [["count","?g"]],
+    ":in" : ["$", "?hugo"],
+    ":where" : [
+      ["?g", ":gene/hgnc-symbol", "?hugo"]
+    ]
+  },
+  "args" : ["ARG2"]
+}

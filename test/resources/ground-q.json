@@ -1,0 +1,6 @@
+{":find" : ["?g"],
+ ":where" : [
+  [["ground", "ARG2"], "?hugo"],
+   ["?g", ":gene/hugo", "?hugo"]
+ ]
+}
