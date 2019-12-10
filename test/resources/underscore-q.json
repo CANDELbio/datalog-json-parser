@@ -1,0 +1,9 @@
+{
+  ":find": [
+    "?t",
+    "?tname"
+  ],
+  ":where": [
+    ["_", ":track/name", "?tname"]
+  ]
+}
