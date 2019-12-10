@@ -1,1 +1,1 @@
-{:find [?t ?tname], :where [(_ :track/name ?tname)]}
+{:find [?tname], :where [(_ :track/name ?tname)]}

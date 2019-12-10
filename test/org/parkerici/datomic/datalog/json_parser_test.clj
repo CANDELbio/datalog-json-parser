@@ -49,7 +49,7 @@
 
 (comment
   :test-parsing
-  (def from-json (->> (io/file "test/resources/re-q.json")
+  (def from-json (->> (io/file "test/resources/underscore-q.json")
                       (slurp)
                       (json/read-str)))
   (prn (sut/parse-q from-json)))

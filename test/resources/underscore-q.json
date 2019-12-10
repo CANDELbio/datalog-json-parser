@@ -1,6 +1,5 @@
 {
   ":find": [
-    "?t",
     "?tname"
   ],
   ":where": [
