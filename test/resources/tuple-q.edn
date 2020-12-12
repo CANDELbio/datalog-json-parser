@@ -1,0 +1,4 @@
+{:find [?tup]
+ :in [?a ?b]
+ :where [[(tuple ?a ?b) ?tup]]}
+

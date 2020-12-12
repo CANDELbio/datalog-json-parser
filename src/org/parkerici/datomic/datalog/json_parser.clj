@@ -73,6 +73,8 @@
    "str" ['str ::fn-expr]
    "re-pattern" ['re-pattern ::fn-expr]
    "re-find" ['re-find ::fn-expr]
+   "tuple" ['tuple ::fn-expr]
+   "untuple" ['untuple ::fn-expr]
    "get-else" ['get-else ::fn-expr]
    "get-some" ['get-some ::fn-expr]
    "missing?" ['missing? ::fn-expr]
