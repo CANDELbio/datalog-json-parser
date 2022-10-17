@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Running datalog json parser server"
+
+if [ "$JAVA_OPTS"  == "" ]; then
+    JAVA_OPTS='-XX:+UseG1GC -XX:MaxGCPauseMillis=50'
+fi
+
+java -server -Xss4m -cp example-server.jar $JAVA_OPTS clojure.main -m org.parkerici.example-query-server.service $*
